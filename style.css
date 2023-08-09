@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
+    outline: 1px solid red;
 }
 
 /* SECTION 1 */
@@ -17,7 +18,6 @@
     justify-content: space-between;
     margin: 0px 200px 75px 200px;
     padding-top: 20px;
-    min-width: 800px;
 }
 
 .nav-logo {
@@ -39,25 +39,25 @@
 .hero {
     display: flex;
     align-items: center;
-    min-width: 800px;
     margin: 30px 200px 75px 200px;
     gap: 20px;
 }
 
-.hero button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    font-weight: 800;
-    padding: 15px 40px;
-    border: none;
+.hero a {
+    display: inline-block;
     border-radius: 5px;
+    background-color: #3882F6;
+    color: #F9FAF7;
+    padding: 6px 28px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.hero-content img {
-    flex: auto;
-    max-width: 100%;
-    max-height: 400px;
+.hero img {
+    max-width: 400px;
+    max-height: auto;
     border-radius: 5px;
+    margin-left: auto;
 }
 
 .hero h1 {
@@ -70,7 +70,7 @@
 .hero p {
     font-size: 18px;
     color: #E5E7EB;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 /* SECTION 2 */
@@ -98,6 +98,7 @@
 
 .pic-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding-bottom: 75px;
@@ -136,6 +137,7 @@
 .section-four {
     padding: 20px 0;
 }
+
 .action-banner {
     background-color: #3882F6;
     margin: 50px 175px;
@@ -147,15 +149,18 @@
     color: #F9FAF7;
 }
 
+.action-banner p {
+    line-height: 1.1em;
+}
 .action-banner a {
-    border: 2px solid #F9FAF7;
+    border: 1px solid #F9FAF7;
     border-radius: 5px;
     background-color: #3882F6;
-    color:#F9FAF7;
-    padding: 3px 15px;
+    color: #F9FAF7;
+    padding: 4px 20px;
     text-decoration: none;
+    white-space: nowrap;
 }
-
 /* SECTION 5 */
 
 .section-five {
